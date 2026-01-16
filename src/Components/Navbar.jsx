@@ -1,12 +1,12 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 
 const Navbar = () => {
     return (
-       <fragments>
+       <Fragment>
             <nav>
-                
+                NAVBAR
             </nav>
-       </fragments>
+       </Fragment>
     )
 }
 
