@@ -4,3 +4,8 @@
 *{
    font-family: "Roboto", sans-serif;
 }
+
+.text-outline {
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+}
