@@ -28,6 +28,7 @@ import {
   SiMongodb,
   SiMysql,
   SiNetlify,
+  SiPhp,
   SiPostgresql,
   SiPostman,
   SiRedux,
@@ -44,43 +45,30 @@ import {
 import { DiJava, DiPython, DiVisualstudio } from "react-icons/di";
 import { TbBrandCSharp } from "react-icons/tb";
 import { IoIosStarOutline } from "react-icons/io";
+
+
 export const skillsData = [
   {
     title: "Frontend",
     skills: [
       { name: "HTML", icon: <FaHtml5 className="text-orange-500" /> },
       { name: "CSS", icon: <FaCss3Alt className="text-blue-500" /> },
-      { name: "SASS", icon: <FaSass className="text-pink-400" /> },
       { name: "JavaScript", icon: <FaJs className="text-yellow-400" /> },
       { name: "React JS", icon: <FaReact className="text-cyan-400" /> },
-      { name: "Angular", icon: <FaAngular className="text-red-500" /> },
-      { name: "Redux", icon: <SiRedux className="text-purple-500" /> },
-      { name: "Next JS", icon: <RiNextjsFill className="text-white" /> },
       {
         name: "Tailwind CSS",
         icon: <RiTailwindCssFill className="text-teal-400" />,
       },
-      {
-        name: "GSAP",
-        icon: <MdOutlineSettingsApplications className="text-green-500" />,
-      },
-      {
-        name: "Material UI",
-        icon: <GiMaterialsScience className="text-blue-400" />,
-      },
+
       { name: "Bootstrap", icon: <FaBootstrap className="text-purple-600" /> },
     ],
   },
   {
     title: "Backend",
     skills: [
-      { name: "Spring Boot", icon: <SiSpring className="text-green-600" /> },
-      { name: "Node JS", icon: <FaNodeJs className="text-green-400" /> },
+      { name: "MySQL", icon: <SiMysql className="text-blue-500" /> },
       { name: "Express JS", icon: <SiExpress className="text-gray-300" /> },
-      { name: "MySQL", icon: <SiMysql className="text-blue-400" /> },
-      { name: "MongoDB", icon: <SiMongodb className="text-green-500" /> },
-      { name: "Firebase", icon: <SiFirebase className="text-yellow-500" /> },
-      { name: "PostgreSQL", icon: <SiPostgresql className="text-sky-500" /> },
+      { name: "Node JS", icon: <FaNodeJs className="text-green-400" /> },
     ],
   },
   {
@@ -89,13 +77,8 @@ export const skillsData = [
       { name: "C", icon: <SiC className="text-blue-400" /> },
       { name: "C++", icon: <SiCplusplus className="text-blue-500" /> },
       { name: "Java", icon: <DiJava className="text-red-600" /> },
-      { name: "Python", icon: <DiPython className="text-yellow-400" /> },
-      { name: "C#", icon: <TbBrandCSharp className="text-purple-400" /> },
-      {
-        name: "JavaScript",
-        icon: <SiJavascript className="text-yellow-400" />,
-      },
-      { name: "TypeScript", icon: <SiTypescript className="text-blue-400" /> },
+       {name: "Visual Basic", icon: <MdOutlineSettingsApplications className="text-purple-500" />},
+      { name:"Php", icon: <SiPhp className="text-purple-400" />},
     ],
   },
   {
@@ -104,10 +87,8 @@ export const skillsData = [
       { name: "Git", icon: <SiGit className="text-orange-500" /> },
       { name: "GitHub", icon: <SiGithub className="text-white" /> },
       { name: "VS Code", icon: <DiVisualstudio className="text-blue-500" /> },
-      { name: "Postman", icon: <SiPostman className="text-orange-400" /> },
-      { name: "Vercel", icon: <SiVercel className="text-white" /> },
-      { name: "Netlify", icon: <SiNetlify className="text-teal-400" /> },
       { name: "Figma", icon: <SiFigma className="text-pink-500" /> },
+      { name: "Canva", icon: <GiMaterialsScience className="text-yellow-400" /> },
     ],
   },
 ];
@@ -122,7 +103,7 @@ export const navItems = [
 ];
 
 
-// Portfolio data
+// Project data
 export const portfolioItems = [
   {
     title: "E-commerce Website",
@@ -143,36 +124,4 @@ export const portfolioItems = [
       "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1115&q=80",
   },
 ];
-export const experiences = [
-  {
-    id: 1,
-    company: "Webverse Digital",
-    logo: <GiSandsOfTime />, // replace with actual logo
-    title: "Fullstack Developer",
-    period: "April 2024 - Present",
-    description:
-      "Developed dynamic and scalable web applications using the MERN stack, handling both frontend and backend development. Collaborated with cross-functional teams to build responsive UI, implement RESTful APIs, and optimize application performance in an agile environment.",
-    skills: [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "React JS",
-      "TypeScript",
-      "Node JS",
-      "Tailwind CSS",
-      "MongoDB",
-      "Redux",
-      "Next JS",
-    ],
-  },
-  {
-    id: 2,
-    company: "Agumentik Group of Companies",
-    logo: <IoIosStarOutline />, // replace with actual logo
-    title: "Fullstack Engineer",
-    period: "July 2023 - March 2024",
-    description:
-      "Contributed to innovative projects as a Fullstack Engineer, leading both frontend and backend development using modern technologies.",
-    skills: ["React JS", "Node JS", "Express", "MongoDB"],
-  },
-];
+

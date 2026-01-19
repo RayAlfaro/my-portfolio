@@ -11,10 +11,10 @@ const Navbar = () => {
             sections.forEach((section) => {
                 const sectionTop = section.offsetTop; 
                 if (window.pageYOffset >= sectionTop - 200) {
-                    current = section.id;
+                    currentSection = section.id;
                 }
             })
-            setActiveSection(current)
+            setActiveSection(currentSection)
         }
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
