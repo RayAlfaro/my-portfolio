@@ -22,19 +22,19 @@ const Navbar = () => {
 
     return (
        <Fragment>
-            <nav className='fixed bg-black top-0 w-full  backdrop-blur-md border-b border-white/20 px-3 transition-all'>
+            <nav className='fixed bg-transparent top-0 w-full py-2 z-50 backdrop-blur-md border-b border-white/20 px-3 transition-all'>
                 <div className='container mx-auto flex items-center justify-between px-6'>
-                    <div className='text-2xl text-outline font-bold'>Coder</div>
-                    <ul className='hidden sm:flex space-x-8 text-white text-sm font-light uppercase'>
+                    <div className='text-2xl text-outline font-bold'>RAY</div>
+                    <ul className='hidden md:flex space-x-8 text-white text-sm font-light uppercase'>
                         {
                             navItems.map((item) => (
-                                <li className={`hover:text-teal-500 transition-colors ${activeSection === item.id?"text-teal-400":""}} `}>
+                                <li key={item.id} className={`hover:text-teal-500 cursor-pointer transition-colors ${activeSection === item.id?"text-teal-400":""}} `}>
                                     {item.label}
                                 </li>
                             ))
                         }
                     </ul>
-                    <button className='ml-4 px-5 py-1 rounded-full bg-gradient-to-r from-teal-500  to-teal-700 hover:opacity-90 text-white font-normal transition-all'>Hire Me</button>
+                    {/* <button className='ml-4 px-5 py-1 rounded-full bg-gradient-to-r from-teal-500  to-teal-700 hover:opacity-90 text-white font-normal transition-all'>Hire Me</button> */}
                 </div>
             </nav>
        </Fragment>
