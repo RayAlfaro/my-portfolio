@@ -3,6 +3,15 @@ import { navItems } from '../Data/data';
 
 const Navbar = () => {
     const [activeSection, setActiveSection] = React.useState('home');
+    
+    const handleNavClick = (sectionId) => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+            setActiveSection(sectionId);
+        }
+    };
+    
     useEffect(() => {
         const handleScroll = () => {
             const sections = document.querySelectorAll('section');
@@ -28,7 +37,11 @@ const Navbar = () => {
                     <ul className='hidden md:flex space-x-8 text-white text-sm font-light uppercase'>
                         {
                             navItems.map((item) => (
-                                <li key={item.id} className={`hover:text-teal-500 cursor-pointer transition-colors ${activeSection === item.id?"text-teal-400":""}} `}>
+                                <li 
+                                    key={item.id} 
+                                    onClick={() => handleNavClick(item.id)}
+                                    className={`cursor-pointer transition-colors ${activeSection === item.id ? "text-teal-500" : "text-white hover:text-teal-500"}`}
+                                >
                                     {item.label}
                                 </li>
                             ))

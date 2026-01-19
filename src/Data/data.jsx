@@ -98,30 +98,27 @@ export const navItems = [
   { id: "home", label: "Home" },
   { id: "about", label: "About" },
   { id: "skills", label: "Skills" },
-  { id: "portfolio", label: "Portfolio" },
-  { id: "contact", label: "Reflection" },
+  { id: "project", label: "Project" },
+  { id: "reflection", label: "Reflection" },
 ];
 
 
 // Project data
 export const portfolioItems = [
   {
-    title: "E-commerce Website",
-    category: "Web Design",
-    image:
-      "https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80",
+    title: "OJTracker",
+    category: "Integrative Programming And Technologies 1 Project",
+    image: "/src/assets/OJTracker.jpeg",
   },
   {
-    title: "Fitness App UI",
-    category: "UI/UX Design",
-    image:
-      "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80",
+    title: "Trove",
+    category: "System Integrated Programming Project",
+    image: "/src/assets/Trove.jpeg",
   },
   {
-    title: "Analytics Dashboard",
-    category: "Web Development",
-    image:
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1115&q=80",
+    title: "Omeco Billing System",
+    category: "Object-Oriented Programming Project",
+    image: "./src/assets/OMECO.png",
   },
 ];
 
